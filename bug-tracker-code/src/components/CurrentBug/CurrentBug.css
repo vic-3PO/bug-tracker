@@ -1,0 +1,64 @@
+.current-bug{
+    max-height: 360px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 30px;
+}
+
+.current-bug p{
+ text-align: left;
+ color: #707070;
+ margin: 10px 0;
+}
+
+.current-bug p spam{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.current-bug p spam,
+.current-bug .description-text{
+    color: #959595;
+}
+
+.current-bug .individual-bug{
+    position: relative;
+}
+
+.current-bug .close-bug {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #959595;
+}
+
+.current-bug hr {
+    border: none;
+    background: #989898;
+    height: 1px;
+    margin-top: 20px;
+}
+
+.current-bug::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+  border-radius: 10px;
+  background-color: #CCCCCC;
+}
+
+.current-bug::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.current-bug::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg,
+                        transparent,
+                        rgba(0, 0, 0, 0.4) 50%,
+                        transparent,
+                        transparent)
+}

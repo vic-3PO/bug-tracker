@@ -4,7 +4,7 @@ import CurrentBug from "./components/CurrentBug/CurrentBug";
 import './App.css';
 
 function App() {
-  const [addBug, setAddBug] = useState(true)
+  const [addBug, setAddBug] = useState(false)
   return (
     <div className="App">
       <h1>Bug Tracker</h1>
@@ -12,7 +12,7 @@ function App() {
         { addBug ? < AddBug/ > : <CurrentBug/>}
       </div>
       <div className='view-selection'>
-        <button class="view-buttom">Bug Atual</button>
+        <button class="view-buttom">Lista de Bugs</button>
         <button class="view-buttom active-buttom">Adicionar Bug</button>
       </div>
     </div>
